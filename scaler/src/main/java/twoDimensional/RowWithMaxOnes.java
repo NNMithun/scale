@@ -1,4 +1,4 @@
-package week3;
+package twoDimensional;
 
 import java.util.ArrayList;
 

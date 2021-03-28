@@ -1,4 +1,4 @@
-package week3;
+package twoDimensional;
 
 import java.util.ArrayList;
 //https://www.geeksforgeeks.org/return-an-array-of-anti-diagonals-of-given-nn-square-matrix/
