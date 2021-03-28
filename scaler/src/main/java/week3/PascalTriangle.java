@@ -12,21 +12,36 @@ public class PascalTriangle {
   }
 
   public static ArrayList<ArrayList<Integer>> solve(int A) {
-    ArrayList<ArrayList<Integer>> pascal = new ArrayList<ArrayList<Integer>>();
-    ArrayList<Integer> row = new ArrayList<Integer>();
-    Integer pascalNumber = 11;
+    ArrayList<ArrayList<Integer>> b= new ArrayList<ArrayList<Integer>>();
+    ArrayList<Integer> a= new ArrayList<Integer>();
 
-    for (int i = 0; i <= A-1; i++) {
-      row = new ArrayList<Integer>();
-      pascalNumber = (int) Math.round(Math.pow(11, i));
-
-      while (pascalNumber != 0) {
-        row.add(pascalNumber % 10);
-        pascalNumber = pascalNumber / 10;
-      }
-      pascal.add(row);
+    if (A>=1){
+      a.add(1);
+      b.add(a);
     }
-    return pascal;
+    if (A>=2){
+      a= new ArrayList<Integer>();
+      a.add(1);
+      a.add(1);
+      b.add(a);
+    }
+
+
+    ArrayList<Integer> c=a;
+
+    for (int i=2;i<A;i++){
+       a= new ArrayList<Integer>();
+       a.add(1);
+      for (int k=1;k<i;k++){
+        a.add(c.get(k)+c.get(k-1));
+      }
+      a.add(1);
+      c=a;
+      b.add(a);
+
+    }
+
+    return b;
 
   }
 }
