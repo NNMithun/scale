@@ -1,9 +1,8 @@
 package moreProblemsOnHashing;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
-public class SubArrayWithSumZero {
+public class BruteForceSubArrayWithSumZero {
 
   public static void main(String[] args) {
     ArrayList<Integer> a= new ArrayList<>();
@@ -328,25 +327,27 @@ public class SubArrayWithSumZero {
 
   }
 
-  public static int solve(ArrayList<Integer> A) {
+  private static int solve(ArrayList<Integer> a) {
+    int sum=0;
 
-    HashMap<Long,Integer> hm= new HashMap<>();
-    hm.put(Long.valueOf(A.get(0)),0);
-    Long prefixSum=Long.valueOf(A.get(0));
+    for (int i=0;i<a.size();i++){
+      sum=a.get(i);
+      for (int j=i+1;j<a.size();j++){
+        sum+=a.get(j);
+        System.out.println((i) +" "+ (a.get(i)) +"+"+ (a.get(j))+"="+(sum));
 
 
-    for(int i=1;i<A.size();i++){
-     // System.out.println((i)+" " +(A.get(i))+"="+(prefixSum));
-      prefixSum+=A.get(i);
-      if(hm.containsKey(prefixSum)|| hm.containsKey(0) || A.get(i)==0){
-        return 1;
-      }
-      else {
-        hm.put(Long.valueOf(prefixSum),i);
+        if(sum==0){
+          System.out.println(a.get(i));
+          System.out.println(a.get(j));
+          System.out.println(sum);
+          return 1;
+
+        }
       }
     }
     return 0;
-
-
   }
+
+
 }

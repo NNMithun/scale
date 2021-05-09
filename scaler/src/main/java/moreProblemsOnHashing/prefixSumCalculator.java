@@ -1,10 +1,8 @@
 package moreProblemsOnHashing;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
-public class SubArrayWithSumZero {
-
+public class prefixSumCalculator {
   public static void main(String[] args) {
     ArrayList<Integer> a= new ArrayList<>();
     a.add( 87);
@@ -321,32 +319,12 @@ public class SubArrayWithSumZero {
     a.add( 6);
     a.add( 961);
 
+    int prefixSum=a.get(0);
 
-
-    int i=solve(a);
-    System.out.println(i);
-
-  }
-
-  public static int solve(ArrayList<Integer> A) {
-
-    HashMap<Long,Integer> hm= new HashMap<>();
-    hm.put(Long.valueOf(A.get(0)),0);
-    Long prefixSum=Long.valueOf(A.get(0));
-
-
-    for(int i=1;i<A.size();i++){
-     // System.out.println((i)+" " +(A.get(i))+"="+(prefixSum));
-      prefixSum+=A.get(i);
-      if(hm.containsKey(prefixSum)|| hm.containsKey(0) || A.get(i)==0){
-        return 1;
-      }
-      else {
-        hm.put(Long.valueOf(prefixSum),i);
-      }
+    for(int i=1;i<a.size()-1;i++){
+      System.out.println((prefixSum)+"+"+(a.get(i) )+"="+(prefixSum+=a.get(i)));
     }
-    return 0;
-
 
   }
+
 }
