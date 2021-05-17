@@ -39,6 +39,7 @@ public class NobleIntegerV2 {
       }
       old = next;
     }
+
     System.out.println(A);
 
 

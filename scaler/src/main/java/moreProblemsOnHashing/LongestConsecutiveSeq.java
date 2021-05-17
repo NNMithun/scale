@@ -9,7 +9,7 @@ import java.util.List;
 public class LongestConsecutiveSeq {
 
   public static void main(String[] args) {
-    List<Integer> a= new ArrayList<>();
+    ArrayList<Integer> a= new ArrayList<>();
     a.add(97 );
     a.add(86 );
     a.add(67 );
