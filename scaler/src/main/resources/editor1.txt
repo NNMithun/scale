@@ -1,57 +1,56 @@
-744,
-744,
-744,
-744,
-582,
-582,
-506,
-531,
-768,
-827,
-827,
-827,
-827,
-827,
-827,
-910,
-910,
-910,
-910,
-910,
-910,
-647,
-647,
-647,
-922,
-922,
-922,
-922,
-983,
-983,
-983,
-983,
-983,
-983,
-945,
-945,
-945,
-945,
-869,
-869,
-869,
-869,
-809,
-809,
-715,
-715,
-801,
-801,
-952,
-952,
-952,
-952,
-952,
-952,
-948,
-948,
-948
+arrayList.add( -5);
+arrayList.add( 1);
+arrayList.add( 4);
+arrayList.add( -7);
+arrayList.add( 10);
+arrayList.add( -7);
+arrayList.add( 0);
+arrayList.add( 7);
+arrayList.add( 3);
+arrayList.add( 0);
+arrayList.add( -2);
+arrayList.add( -5);
+arrayList.add( -3);
+arrayList.add( -6);
+arrayList.add( 4);
+arrayList.add( -7);
+arrayList.add( -8);
+arrayList.add( 0);
+arrayList.add( 4);
+arrayList.add( 9);
+arrayList.add( 4);
+arrayList.add( 1);
+arrayList.add( -8);
+arrayList.add( -6);
+arrayList.add( -6);
+arrayList.add( 0);
+arrayList.add( -9);
+arrayList.add( 5);
+arrayList.add( 3);
+arrayList.add( -9);
+arrayList.add( -5);
+arrayList.add( -9);
+arrayList.add( 6);
+arrayList.add( 3);
+arrayList.add( 8);
+arrayList.add( -10);
+arrayList.add( 1);
+arrayList.add( -2);
+arrayList.add( 2);
+arrayList.add( 1);
+arrayList.add( -9);
+arrayList.add( 2);
+arrayList.add( -3);
+arrayList.add( 9);
+arrayList.add( 9);
+arrayList.add( -10);
+arrayList.add( 0);
+arrayList.add( -9);
+arrayList.add( -2);
+arrayList.add( 7);
+arrayList.add( 0);
+arrayList.add( -4);
+arrayList.add( -3);
+arrayList.add( 1);
+arrayList.add( 6);
+arrayList.add( -3 );
